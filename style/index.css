@@ -1,0 +1,125 @@
+.home-pictures {
+  background-color: white;
+  padding: 80px;
+}
+
+.home-pictures h2 {
+  color: #242424;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.home-pictures div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.home-pictures img {
+  width: 326px;
+  height: 311px;
+}
+
+.home-introduction {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.home-introduction h1 {
+  margin-bottom: 15px;
+}
+
+.home-introduction p {
+  margin-bottom: 30px;
+}
+
+.home-introduction div {
+  padding-right: 80px;
+}
+
+.contact-section h2 {
+  color: #a5b4fc;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+}
+
+.form-name-email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 996px) {
+  .home-introduction {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-introduction div {
+    padding-right: 0;
+    text-align: center;
+    order: 2;
+  }
+
+  .home-introduction img {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .home-pictures {
+    padding: 20px;
+  }
+
+  .home-pictures div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .form-name-email {
+    flex-direction: column;
+    gap: 0;
+  }
+}
