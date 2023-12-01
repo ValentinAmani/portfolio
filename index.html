@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil - AMANI Koffi</title>
     <link href="style/style.css" rel="stylesheet" />
@@ -12,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <script src="scripts/index.js" defer></script>
   </head>
 
   <body>
@@ -53,7 +55,7 @@
         </div>
       </section>
       <section id="contact" class="contact-section">
-        <h2>Parlons de votre projet</h2>
+        <h2>Laissez un message</h2>
         <form method="get" action="">
           <div class="form-name-email">
             <div class="form-column">
@@ -67,7 +69,13 @@
           </div>
           <label for="message">Message</label>
           <textarea name="message" id="message" rows="10"></textarea>
-          <input type="submit" value="ENVOYER" class="cta" required />
+          <input
+            type="submit"
+            value="ENVOYER"
+            id="form-submit"
+            class="cta"
+            required
+          />
         </form>
       </section>
     </main>

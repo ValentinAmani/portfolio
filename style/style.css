@@ -55,6 +55,7 @@ a:hover {
 .cta:hover {
   background: linear-gradient(#696484, #8788ba);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .logo {
